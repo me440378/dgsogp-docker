@@ -1,1 +1,3 @@
-dgsogp项目使用Docker编排部署的相关代码仓库
+<h3>dgsogp项目使用Docker编排部署的相关代码仓库</h3>
+
+dgsogp主系统的build之前需要git clone主系统的代码，因为主系统的代码可能会更新，所以没有直接纳入这个仓库的管理。之前考虑直接在build主系统的时候加入https的git clone的过程，在build的时候自动拉取代码，但是由于网络问题，实验结果不好，所以取消了。
