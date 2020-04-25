@@ -7,6 +7,7 @@ COPY sources.list /etc/apt/
 COPY dgsogp_requirements.txt get-pip.py setup.sh /data/venv/
 #dgsogp项目代码用git clone下载就好
 COPY dgsogp /data/dgsogp
+COPY gunicorn.py /data/dgsogp/dgsogp_django/
 EXPOSE 8888
 EXPOSE 80
 RUN apt update && \
