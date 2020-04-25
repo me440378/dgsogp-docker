@@ -1,0 +1,23 @@
+version: '3'
+services:
+  dgsogp:
+    image: me440378/dgsogp:v0.1-7
+    networks:
+      - host
+    depends_on:
+      - dgsogp_mysql
+      - dgsogp_mongodb
+      - dgsogp_admin_mongo
+  dgsogp_mysql:
+    image: me440378/dgsogp_mysql:v0.1-2
+    networks:
+      - host
+  dgsogp_mongodb:
+    image: me440378/dgsogp_mongodb:v0.1-5
+    networks:
+      - host
+  dgsogp_admin_mongo:
+    image: me440378/dgsogp_admin_mongo:v0.1-1
+    networks:
+      - host
+

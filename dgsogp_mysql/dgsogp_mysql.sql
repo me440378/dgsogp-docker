@@ -114,6 +114,23 @@ CREATE TABLE `hadoopsources` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '消息ID',
+  `name` varchar(255) NOT NULL COMMENT '消息名',
+  `content` varchar(255) NOT NULL COMMENT '消息内容',
+  `status` int(1) NOT NULL COMMENT '消息状态\n0 未读\n1 已读\n2 删除',
+  `created_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
 -- Table structure for table `metadata`
 --
 
