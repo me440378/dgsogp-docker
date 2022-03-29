@@ -18,7 +18,7 @@ gunicorn==20.0.4
 hdfs==2.5.8
 idna==2.9
 Markdown==3.2.1
-paramiko==2.7.1
+paramiko==2.10.1
 prettytable==0.7.2
 py4j==0.10.7
 pycparser==2.19
